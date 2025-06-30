@@ -38,31 +38,10 @@ O app foi inspirado na proposta de criar um **programa de apoio psicossocial**, 
 - **Android Studio**
 - **Gradle**
 - **XML para interfaces**
----
-
-## 📸 Capturas de Tela
-
-| Login | Menu Principal | Módulo de Terapia |
-|-------|----------------|-------------------|
-| ![login](imgs/login.png) | ![menu](imgs/menu.png) | ![terapia](imgs/terapia.png) |
-
-> *Adicione prints reais do app à pasta `imgs/` para aparecerem aqui.*
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```bash
-FIAP_Softtek/
-├── app/
-│   └── src/
-│       ├── main/
-│       │   ├── java/com/softtek/nr1/
-│       │   └── res/
-├── build.gradle
-├── AndroidManifest.xml
-└── README.md
-
+##
 
 👩‍💻 Desenvolvedora
 Emilly Rodrigues Viana de Souza
