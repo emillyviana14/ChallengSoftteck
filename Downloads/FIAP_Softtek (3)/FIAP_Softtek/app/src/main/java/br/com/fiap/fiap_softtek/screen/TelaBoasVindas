@@ -1,0 +1,69 @@
+@Composable
+fun WelcomeScreen(navController: NavController) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color.Black
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Imagem circular
+            Image(
+                painter = painterResource(id = R.drawable.meditation), // substitua pelo seu recurso
+                contentDescription = "Pessoa meditando",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(160.dp)
+                    .clip(CircleShape)
+            )
+
+            Spacer(modifier = Modifier.width(16.dp))
+
+            // Textos motivacionais
+            Column(
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = "Seja bem-\nvindo(a)!",
+                    color = Color.Cyan,
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Bold,
+                    lineHeight = 28.sp
+                )
+
+                Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = "Aqui, o seu bem-\nestar emocional\né prioridade.",
+                    color = Color.Cyan,
+                    fontSize = 18.sp,
+                    lineHeight = 24.sp
+                )
+
+                Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = "Vamos dar um\npasso de cada\nvez, no seu\ntempo.",
+                    color = Color.Cyan,
+                    fontSize = 18.sp,
+                    lineHeight = 24.sp
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                // Botão de navegação com ícone de seta
+                IconButton(onClick = { navController.navigate("home") }) {
+                    Icon(
+                        imageVector = Icons.Default.ArrowForward,
+                        contentDescription = "Avançar",
+                        tint = Color.Cyan,
+                        modifier = Modifier.size(40.dp)
+                    )
+                }
+            }
+        }
+    }
+}
